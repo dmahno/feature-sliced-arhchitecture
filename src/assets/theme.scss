@@ -1,0 +1,47 @@
+@use './tools' as *;
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-primary;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  // scroll-padding-top: $indent-xl;
+}
+
+body {
+  min-width: 32rem;
+  font-size: $text-s;
+  line-height: $text-lh-s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+button,
+textarea,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

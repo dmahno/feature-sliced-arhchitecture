@@ -1,0 +1,32 @@
+@use './variables' as *;
+@use 'sass:string';
+
+@mixin big-desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin phone-only {
+  @media screen and (max-width: 539px) {
+    @content;
+  }
+}

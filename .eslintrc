@@ -1,0 +1,8 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["promise", "import"],
+  "rules": {
+    "no-unused-vars": 2,
+    "import/order": [2, { "groups": [["builtin", "external"], "internal"], "newlines-between": "always" }]
+  }
+}
