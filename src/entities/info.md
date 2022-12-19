@@ -3,8 +3,9 @@
     |   ├── {some-entity}/               #     Slice: (н-р сущность User)
     |   |   ├── lib/                     #        Segment: Инфраструктурная-логика (helpers/utils)
     |   |   ├── model/                   #         Segment: Бизнес-логика
-    |   |        ├── actions
+    |   |        ├── state               #         Segment: Бизнес-логика
     |   |        ├── selectors 
-    |   |        ├── constants          
-    |   |   └── ui/ ~components          #         Segment: UI-логика
+    |   |        ├── thunks              #         Segment: side-effect
+    |   |   └── ui                       #         Segment: UI-логика
+    index.ts
 ```
