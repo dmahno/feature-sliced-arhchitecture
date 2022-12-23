@@ -1,11 +1,12 @@
 ```
    ├── entities/                         # Layer: Бизнес-сущности
     |   ├── {some-entity}/               #     Slice: (н-р сущность User)
-    |   |   ├── lib/                     #        Segment: Инфраструктурная-логика (helpers/utils)
-    |   |   ├── model/                   #         Segment: Бизнес-логика
-    |   |        ├── state               #         Segment: actions, initialState
-    |   |        ├── selectors           #         Segment: селекторы для стора
-    |   |        ├── thunks              #         Segment: другие side-effect (изменение (запись) объекта, доступ (чтение или запись) к объекту)
-    |   |   └── ui                       #         Segment: UI-логика
+    |   |   ├── lib/                     #        Инфраструктурная-логика (helpers/utils)
+    |   |   ├── model/                   #         :Бизнес-логика
+    |   |        ├── state               #         :actions, initialState
+    |   |        ├── selectors           #         :селекторы для стора
+    |   |        ├── thunks              #         :другие side-effect (изменение (запись) объекта, доступ (чтение или запись) к объекту)
+    |   |        ├── index.ts            #         :Экспорт
+    |   |   └── ui                       #         :UI-логика
     index.ts
 ```
